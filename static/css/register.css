@@ -1,0 +1,10 @@
+.bg {
+    background-image: url('../img/lambo.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: black;
+    color: red;
+    padding: 20px;
+    height: 80%;
+}

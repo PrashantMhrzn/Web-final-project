@@ -1,0 +1,31 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<div id="seller-main">
+    <div class="container text-center">
+        <h1 class="text-center p-4 text-white">Available Cars</h1>
+        <a href="add/" class="btn btn-outline-danger">Add car</a>
+        <div class="row p-4">
+            {%for car in cars%}
+            <div class="col mb-2">
+                <div class="card border border-danger" style="width: 18rem;">
+                    {%if car.img%}
+                    <img src="{{car.img.url}}" class="card-img-top" alt="...">
+                    {%else%}
+                    <img src="" class="card-img-top" alt="...">
+                    {%endif%}
+                    <div class="card-body">
+                        <h5 class="card-title">${{car.price}}</h5>
+                        <p class="card-text">Model: {{car.model_name}}</p>
+                        <p class="card-text">Make: {{car.make_name}}</p>
+                        <p class="card-text">Location: {{car.location}}</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+
+    </div>
+</div>
+{%endblock%}

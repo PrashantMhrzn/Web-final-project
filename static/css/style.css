@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main {
+    background: url("../img/giphy3.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+}
+
+.intro {
+    background-color: black;
+    color: white;
+    width: 30%;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 20px;
+    opacity: 0.4;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.gallery {
+    display: grid;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.gallery .p1 {
+    grid-column-start: 1;
+}
+
+.gallery .p2 {
+    grid-column-start: 2;
+}
+
+/* .navItm {
+    display: flex;
+    justify-content: space-around;
+} */
+
+/* .mainCon * {
+    position: static;
+} */
+
+.mainCon {
+    padding: 0px;
+    position: relative;
+}
+
+.navbar {
+    /* position: sticky; */
+    top: 0;
+    margin: 0px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+}
+
+/* .mainCon div {
+    margin: 0px;
+    padding: 0px;
+} */
+
+/* .container {
+    text-align: center;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+
+
+.footer {
+    background: var(gray);
+    padding-bottom: 2rem;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(white);
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    color: var(white);
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(white);
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 1.5rem;
+}
+
+.footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color: var(--black);
+}
+
+/* form {
+    background-color: black;
+} */
+
+#seller-main {
+    background: url("../img/giphy.gif");
+    background-size: cover;
+    height: 100%;
+}

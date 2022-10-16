@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{% load crispy_forms_tags %}
+{%block content%}
+
+<div class="container">
+    <div class="container mb-3 mt-3">
+        {%if messages%}
+        {%for message in messages%}
+        <div class="alert alert-{{message.tags}}" role="alert">
+            {{message}}
+        </div>
+        {%endfor%}
+        {%endif%}
+
+        <h1 class="text-center p-4">Hello, {{request.user.username}}</h1>
+
+        {%if cars%}
+        <h3>Manage your listings: </h3>
+        {%for car in cars%}
+        <li><a href="{%url 'delete_car' car.id%}">{{car.model_name}}</a></li>
+        {%endfor%}
+        {%else%}
+        <h3>You don't seem to have any listings yet. Why not <a href="{% url 'add_car'%}">create</a> one?</h3>
+        {%endif%}
+    </div>
+</div>
+{%endblock%}
